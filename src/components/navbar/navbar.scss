@@ -1,6 +1,15 @@
 .navbar {
+  width: 100%;
   color: white;
   font-size: 14px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  //background-color: var(--main-color);
+  background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.5) 50%);
+  &.scrolled{
+    background-color: var(--main-color);
+  }
   .container {
     padding: 0 50px;
     display: flex;
@@ -39,9 +48,9 @@
           background-color: var(--main-color);
           border-radius: 5px;
         }
-        span{
-            padding: 10px;
-            cursor: pointer;
+        span {
+          padding: 10px;
+          cursor: pointer;
         }
         &:hover {
           .options {
