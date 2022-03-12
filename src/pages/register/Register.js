@@ -1,4 +1,3 @@
-import { DragHandleRounded } from "@material-ui/icons";
 import { useRef, useState } from "react";
 import "./register.scss";
 
@@ -34,7 +33,7 @@ export default function Register() {
         </p>
         {!email ? (
           <div className="input">
-            <input type="email" placeholder="Email address" ref={emailRef} />
+            <input type="email" placeholder="email address" ref={emailRef} />
             <button className="registerButton" onClick={handleStart}>
               Get Started
             </button>
